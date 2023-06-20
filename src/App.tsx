@@ -1,10 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavMenu from './Views/NavMenu';
 
 function App() {
   return (
+    
     <div className="App">
+      <NavMenu />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

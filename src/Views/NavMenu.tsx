@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const NavMenu = () => {
 
@@ -16,8 +17,9 @@ const NavMenu = () => {
                                 </a>
                             </div>
                             <div className="hidden md:flex items-center space-x-1">
-                                <a href="" className="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-                                <a href=""className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                                <Link to="/" ><button className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</button></Link>
+                                <Link to="/profile" ><button className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Profile</button></Link>
+                                
                             </div>
                         </div>
                     </div>

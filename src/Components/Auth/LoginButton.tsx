@@ -5,7 +5,7 @@ const LoginButton = () => {
 
     const { loginWithRedirect } = useAuth0();
 
-    return <button onClick={() => loginWithRedirect()}>Log In</button>;
+    return <button onClick={() => loginWithRedirect()} className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Log In</button>;
 }
 
 export default LoginButton;

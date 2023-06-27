@@ -1,9 +1,9 @@
 import React from "react";
 
-const DetailsForm = () => {
+const DetailsForm = ({user} : {user: any}) => {
     return (
         <>
-            <form className="bg-white shadow-md rounded max-w-sm">
+            <form className="bg-gray-600 shadow-md rounded max-w-sm p-10">
                 <div className="md:flex md-items-center mb-6">
                     <div className="md:w-1/3">
                         <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="firstName">First Name</label>
@@ -33,12 +33,10 @@ const DetailsForm = () => {
                         <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="gender">Gender</label>
                     </div> 
                     <div className="md:w-2/3">
-                        <div className="inline-block relative w-64">
-                            <select className="block appearance-none w-full bg-gray-200 border border-gray-400 hover:border-green-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                <option>Male</option>
-                                <option>Female</option>
-                            </select>
-                        </div>
+                        <select className="block appearance-none w-full bg-gray-200 border border-gray-400 hover:border-green-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
                     </div>
                 </div>
                 <div className="md:flex md-items-center mb-6">

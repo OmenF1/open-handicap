@@ -13,10 +13,13 @@ const Profile = () => {
 
   return (
     <>
-
-        {isAuthenticated ? <LogoutButton /> : <LoginButton />}
         {user !== undefined && isAuthenticated && (
-          <DetailsForm />
+          <>
+            <img src={user.picture} alt={user.name} />
+            <DetailsForm 
+              user={user}
+            />
+          </>
         )}
     </>
   );

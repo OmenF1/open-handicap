@@ -12,7 +12,7 @@ function App() {
   return (
       
     <Router>
-      <div>
+      <div className="bg-gray-800">
       <NavMenu />
       <Routes>
         <Route path="/" Component={Home} />

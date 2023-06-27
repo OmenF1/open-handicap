@@ -15,7 +15,7 @@ const NavMenu = () => {
                     <div className="flex justify-between">
                         <div className="flex space-x-7">
                             <div>
-                                <a href="#" className="flex items-center py-4 px-2">
+                                <a href="/" className="flex items-center py-4 px-2">
                                     <span className="font-semibold text-gray-500 text-lg">
                                         open-handicap
                                         </span>
@@ -27,7 +27,7 @@ const NavMenu = () => {
                                 {isAuthenticated ?
                                     <>
                                         <Link to="/profile" ><button className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Profile</button></Link>                      
-                                        <Link to="/"><button className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">New Score</button></Link>
+                                        <Link to="/newScore"><button className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">New Score</button></Link>
                                         <LogoutButton />
                                     </>
                                     :

@@ -3,12 +3,11 @@ import './App.css';
 import NavMenu from './Views/NavMenu';
 import Profile from './Components/Profile/Profile';
 import Home from './Components/Home';
-import { useAuth0 } from '@auth0/auth0-react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NewScore from './Components/NewScore';
 
 
 function App() {
-  const { isAuthenticated } = useAuth0();
   return (
       
     <Router>
@@ -17,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/profile" Component={Profile} />
+        <Route path="/newScore" Component={NewScore} />
       </Routes>
       </div>
 
